@@ -82,4 +82,31 @@ Se solicita realizar las modificaciones o agregados necesarios, sin tocar la cla
 
 ## Ejercicio 3
 
+Se nos pide mejorar el siguiente diseño que corresponde a al software de gestión de una tienda de indumentaria deportiva. Los vendedores se catergorizan en PRINCIPIANTE, SENIOR Y EXPERTO.
+Los vendedores trabajan a comisión de las ventas y el porcentaje de comisión depende de tu categoria,  a saber:
 
+* PRINCIPIANTE 10%
+* SENIOR 20 %
+* EXPERTO 40%
+
+Ya hay una implementación para salucionar el problema del calculo de la comisión en base a una venta pero los encargados del proyecto no estan muy conformes con ella:
+
+```java
+    public double comision(double montoVenta) {
+        double porcentajeComision;
+
+        if (tipoVendedor.equals("PRINCIPIANTE")) {
+            porcentajeComision=0.10;
+        } else if (tipoVendedor.equals("SENIOR")) {
+            porcentajeComision=0.20;
+        } else if (tipoVendedor.equals("EXPERTO")) {
+            porcentajeComision=0.40;
+        } else {
+            throw new RuntimeException("Tipo de vendedor inexistente");
+        }
+
+        return montoVenta*porcentajeComision;
+    }
+```
+
+Se pide que utilice los conocimientos adquiridos para mejorar esta solución de no sea necesario tocar la clase Vendedor si se desea agregar nuevas categorias o cambiar los porcentajes de las comisiones.
