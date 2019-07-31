@@ -1,0 +1,50 @@
+@startuml
+
+    class ar.edu.unahur.obj2.ejercicio2.Automotriz {
+        + probarEncender()
+        + probarApagar()
+        + probarAceleracion()
+        + probarFrenado()
+    }
+
+    interface ar.edu.unahur.obj2.ejercicio2.Motor {
+        {abstract} + encendido()
+        {abstract} + rpm()
+        {abstract} + encender()
+        {abstract} + apagar()
+        {abstract} + acelerar()
+        {abstract} + frenar()
+    }
+
+
+    class ar.edu.unahur.obj2.ejercicio2.MotorCarburador {
+        - actualRpm : long
+        - arrancado : boolean
+        + encender()
+        + apagar()
+        + acelerar()
+        + frenar()
+        + encendido()
+        + rpm()
+    }
+  
+    class ar.edu.unahur.obj2.ejercicio2.MotorExperimental {
+    }
+
+
+    class ar.edu.unahur.obj2.ejercicio2.MotorInyeccion {
+        - rpm : long
+        - encendido : boolean
+        + encender()
+        + apagar()
+        + acelerar()
+        + frenar()
+        + encendido()
+        + rpm()
+    }
+
+
+  ar.edu.unahur.obj2.ejercicio2.MotorCarburador .up.|> ar.edu.unahur.obj2.ejercicio2.Motor
+  ar.edu.unahur.obj2.ejercicio2.MotorInyeccion .up.|> ar.edu.unahur.obj2.ejercicio2.Motor
+
+@enduml

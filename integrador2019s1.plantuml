@@ -8,6 +8,36 @@ title __INTEGRADOR2019S1's Class Diagram__\n
   }
   
 
+  namespace ar.edu.unahur.obj2.ejercicio2 {
+    class ar.edu.unahur.obj2.ejercicio2.Automotriz {
+    }
+  }
+  
+
+  namespace ar.edu.unahur.obj2.ejercicio2 {
+    interface ar.edu.unahur.obj2.ejercicio2.Motor {
+    }
+  }
+  
+
+  namespace ar.edu.unahur.obj2.ejercicio2 {
+    class ar.edu.unahur.obj2.ejercicio2.MotorCarburador {
+    }
+  }
+  
+
+  namespace ar.edu.unahur.obj2.ejercicio2 {
+    class ar.edu.unahur.obj2.ejercicio2.MotorExperimental {
+    }
+  }
+  
+
+  namespace ar.edu.unahur.obj2.ejercicio2 {
+    class ar.edu.unahur.obj2.ejercicio2.MotorInyeccion {
+    }
+  }
+  
+
   namespace ar.edu.unahur.obj2.ejercicio1 {
     class ar.edu.unahur.obj2.ejercicio1.PaqueteCuyo {
     }
@@ -29,6 +59,8 @@ title __INTEGRADOR2019S1's Class Diagram__\n
   ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.PaqueteCuyo : paqueteCuyo
   ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.PaqueteNOA : paqueteNOA
   ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.PaquetePatagonia : paquetePatagonia
+  ar.edu.unahur.obj2.ejercicio2.MotorCarburador .up.|> ar.edu.unahur.obj2.ejercicio2.Motor
+  ar.edu.unahur.obj2.ejercicio2.MotorInyeccion .up.|> ar.edu.unahur.obj2.ejercicio2.Motor
 
 
 right footer
