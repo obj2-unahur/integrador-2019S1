@@ -12,6 +12,14 @@ Una agencia de viajes esta desarrollando su propio sistema de gestión y está t
 
 El primer problema que se visualiza es que `AgenciaDeViajes` no está trabajando polimorficamente con los distintos paquetes de viajes. Esto nos trae varios problemas a la hora de querer agregar nuevos paquetes.
 
+```java
+    public void catalogoDePaquetes() {
+        paqueteCuyo.imprimirItinerario();
+        paqueteNOA.itinerario();
+        paquetePatagonia.getItinerario();
+    }
+```
+
 El segundo problema está relacionado con el primero, si bien todos los paquetes son de 3 días con traslados de ida y vuelta, en el diseño no hay nada que nos asegure que todos los paquetes van a tener un itinerario con esa estructura.
 
 Se solicita realizar las modificaciones necesarias para resolver los problemas de diseño encontrados.
