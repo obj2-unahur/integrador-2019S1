@@ -1,7 +1,5 @@
 @startuml
 
-title __EJERCICIO1's Class Diagram__\n
-
   namespace ar.edu.unahur.obj2.ejercicio1 {
     class ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes {
         + AgenciaDeViajes()
