@@ -1,14 +1,49 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
-public class PaqueteNOA {
+import java.util.List;
+import java.lang.String;
+
+public class PaqueteNOA implements Paquete{
+    List<Dia> dias;
+    Dia dia1;
+    Dia dia2;
+    Dia dia3;
+
+    public void addDias(Dia dia) {
+        dias.add(dia);
+    }
+
+    @Override
+    public void imprimir() {
+        this.itinerario();
+    }
+
+    @Override
+    public String ida() {
+        return this.transporteIda();
+    }
+
+    @Override
+    public String vuelta() {
+        return this.transporteVuelta();
+    }
+
 
     public void itinerario() {
         print("Nombre: " + nombre());
-        print("Transporte Ida:" + transporteIda());
-        print("Dia 1: " + dia1());
-        print("Dia 2: " + dia2());
-        print("Dia 3: " + dia3());
-        print("Transporte Vuelta: " + transporteVuelta());
+
+        print("Transporte Ida:" + ida());
+
+        dia1= new Dia(1,dia1());
+        dia2= new Dia(2,dia2());
+        dia3= new Dia(3, dia3());
+
+        dias.add(dia1);
+        dias.add(dia2);
+        dias.add(dia3);
+        dias.stream().forEach(dia -> dia.toString());
+
+        print("Transporte Vuelta: " + vuelta());
     }
 
     private String nombre() {

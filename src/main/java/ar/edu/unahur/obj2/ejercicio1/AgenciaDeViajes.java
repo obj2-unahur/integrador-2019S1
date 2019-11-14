@@ -1,21 +1,21 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
-public class AgenciaDeViajes {
+import java.util.ArrayList;
+import java.util.List;
 
-    private PaqueteCuyo paqueteCuyo;
-    private PaqueteNOA paqueteNOA;
-    private PaquetePatagonia paquetePatagonia;
+public class AgenciaDeViajes {
+    List<Paquete> paquetes;
 
     public AgenciaDeViajes(PaqueteCuyo paqueteCuyo, PaqueteNOA paqueteNOA, PaquetePatagonia paquetePatagonia) {
-        this.paqueteCuyo = paqueteCuyo;
-        this.paqueteNOA = paqueteNOA;
-        this.paquetePatagonia = paquetePatagonia;
+        paquetes= new ArrayList();
+
+        paquetes.add(paqueteCuyo);
+        paquetes.add(paqueteNOA);
+        paquetes.add(paquetePatagonia);
     }
 
     public void catalogoDePaquetes() {
-        paqueteCuyo.imprimirItinerario();
-        paqueteNOA.itinerario();
-        paquetePatagonia.getItinerario();
+        paquetes.stream().forEach(paquete -> paquete.imprimir());
     }
 
 
