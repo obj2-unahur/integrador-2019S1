@@ -2,14 +2,6 @@ package ar.edu.unahur.obj2.ejercicio1.Paquetes;
 
 public class PaqueteCuyo extends Paquete{
 
-    public void imprimirItinerario() {
-        print("Nombre: " + nombre());
-        print("Transporte Ida: " + transporteIda());
-        print("Dia 1: " + dia1());
-        print("Dia 2: " + dia2());
-        print("Dia 3: " + dia3());
-        print("Transporte Vuelta: " + transporteVuelta());
-    }
 
     @Override
     protected String nombre() {

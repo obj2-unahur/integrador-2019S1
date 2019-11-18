@@ -3,15 +3,6 @@ package ar.edu.unahur.obj2.ejercicio1.Paquetes;
 public class PaquetePatagonia extends Paquete{
 
 
-    public void imprimirItinerario() {
-        print("Nombre: " + nombre());
-        print("Transporte Ida: " + transporteIda());
-        print("Dia 1: " + dia1());
-        print("Dia 2: " + dia2());
-        print("Dia 3: " + dia3());
-        print("Transporte Vuelta: " + transporteVuelta());
-    }
-
     @Override
     protected String nombre() {
         return "Paquete Patagonia";
