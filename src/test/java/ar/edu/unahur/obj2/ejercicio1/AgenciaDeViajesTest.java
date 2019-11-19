@@ -1,8 +1,9 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
+import ar.edu.unahur.obj2.ejercicio1.Paquetes.PaqueteCuyo;
+import ar.edu.unahur.obj2.ejercicio1.Paquetes.PaqueteNOA;
+import ar.edu.unahur.obj2.ejercicio1.Paquetes.PaquetePatagonia;
 import org.testng.annotations.BeforeTest;
-
-import static org.testng.Assert.*;
 
 public class AgenciaDeViajesTest {
 
@@ -17,7 +18,7 @@ public class AgenciaDeViajesTest {
         paquetePatagonia = new PaquetePatagonia();
         paqueteCuyo = new PaqueteCuyo();
         paqueteNOA = new PaqueteNOA();
-        agenciaDeViajes = new AgenciaDeViajes(paqueteCuyo, paqueteNOA, paquetePatagonia);
+        agenciaDeViajes = new AgenciaDeViajes();
     }
 
     @org.testng.annotations.Test

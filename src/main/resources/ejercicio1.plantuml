@@ -5,7 +5,7 @@
         + catalogoDePaquetes()
     }
 
-    class ar.edu.unahur.obj2.ejercicio1.PaqueteCuyo {
+    class ar.edu.unahur.obj2.ejercicio1.Paquetes.PaqueteCuyo {
         + getNombre()
         + imprimirItinerario()
         - print()
@@ -16,7 +16,7 @@
         # getTransporteVuelta()
     }
 
-    class ar.edu.unahur.obj2.ejercicio1.PaqueteNOA {
+    class ar.edu.unahur.obj2.ejercicio1.Paquetes.PaqueteNOA {
         + itinerario()
         - nombre()
         # transporteIda()
@@ -27,13 +27,13 @@
         - print()
     }
 
-    class ar.edu.unahur.obj2.ejercicio1.PaquetePatagonia {
+    class ar.edu.unahur.obj2.ejercicio1.Paquetes.PaquetePatagonia {
         + getItinerario()
         - print()
     }
 
-  ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.PaqueteCuyo : paqueteCuyo
-  ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.PaqueteNOA : paqueteNOA
-  ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.PaquetePatagonia : paquetePatagonia
+  ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.Paquetes.PaqueteCuyo : paqueteCuyo
+  ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.Paquetes.PaqueteNOA : paqueteNOA
+  ar.edu.unahur.obj2.ejercicio1.AgenciaDeViajes o-- ar.edu.unahur.obj2.ejercicio1.Paquetes.PaquetePatagonia : paquetePatagonia
 
 @enduml
